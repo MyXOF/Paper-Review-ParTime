@@ -2,7 +2,7 @@
 
 阅读论文：Pilman, Markus, et al. "ParTime: Parallel Temporal Aggregation." Proceedings of the 2016 International Conference on Management of Data. ACM, 2016.
 
-博客地址：
+博客地址：https://github.com/MyXOF/Paper-Review-ParTime
 
 软硕161 徐毅 2016213585
 
