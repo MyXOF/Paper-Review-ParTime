@@ -1,4 +1,6 @@
-#文献阅读总结
+#一、文献阅读总结
+
+__Your report on a Systematic Literature Review on the topic of your interest__
 
 阅读论文：Pilman, Markus, et al. "ParTime: Parallel Temporal Aggregation." Proceedings of the 2016 International Conference on Management of Data. ACM, 2016.
 
@@ -159,3 +161,28 @@ Partime相对上面的好处有：
 [8]. Non-uniform memory access(NUMA).  https://en.wikipedia.org/wiki/Non-uniform_memory_access
 
 [9]. Dean, Jeffrey, and Sanjay Ghemawat. "MapReduce: simplified data processing on large clusters." Communications of the ACM 51.1 (2008): 107-113.
+
+#二、安全
+
+__Your report on identifying a potential threat to a given organizational situation, including how did you do it, and the example social/physical/network attack(s) you have proposed, and the confidence level you have about your proposal.__
+
+首先基本原则是，现在值钱的东西布置那些看得见摸得着的物质，更多的是那些无形的财产。对于一家从事制造公司而言，最重要的就是产品图纸，对于一家互联网公司而言，最重要的就是和用户隐私相关的数据。
+
+攻击思想：里应外合
+
+先派一个卧底到一家互联网公司中，以正常的身份参与到日常工作中，同时收集公司相关情报，比如安保组织，重要地点(警卫室，配电所，机房)的分布等，将这些信息提供给外部攻击人员。等到合适的时机，外部人群可以在卧底的帮助下(大停电，授予访问权限等)进入到这些地点，实施攻击手段，比如在安装后门程序。这样就可以在不知不觉中将公司的数据转移到外部去。
+
+##三、需求建模
+
+__Your report on the requirements elicitation and modelling case study using at least one of the following approaches:__
+
+	a.	Goal-oriented requirements engineering methods: KAOS or i*;
+	b.	Scenario-based requirements engineering methods: user stories or use cases. 
+
+参见doc/KAOS_Report.pdf
+
+##四、建议
+
+__Prioritization of requirements and consensus among stakeholders__首先在开发之前，需要和干系人开会确认需求。首先要保证干系人之间对于需求的意见是一致的，之后开发人员需要把干系人的需求转化为一系列的操作场景，谁在哪里做了什么样的操作，会产生什么样的结果。干系人觉得这部分符合自己的预期了，才能进行后续的开发工作。
+
+关于需求的优先级的问题，我觉得很可能产生一个误区，认为最重要，最核心的应该先开发，但这部分往往是最困难的，开发周期比较长，干系人往往在短时间内难以看到结果。我觉得比较好的策略是DEMO驱动开发的流程，首先把系统的结构搭建起来，然后本着系统随时能部署上线的原则开发功能，每过一段时间之后就可以给干系人看我们的工作进展，虽然核心的功能再在早期可能看不到，但是可以让干系人看到系统不断完善的过程。而且更加重要的一点就是需求可能building发生变化，先把简单的，不变的需求做好了，可以少做很多无用功。我觉得这样做的好处就是上面提到的，能让干系人看到开发的进展，比较安心，后续需求变化所产生的代价相对较小。缺点是开发计划比较难安排，需要合理的任务量进行切分，而且如果重要的功能最后开发，留给它的测试时间就减少了，降低了可靠性。
